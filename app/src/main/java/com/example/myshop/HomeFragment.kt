@@ -36,7 +36,8 @@ class HomeFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         with(binding){
             val action =
-                HomeFragmentDirections.actionHomeFragmentToCheckoutFragment()
+                HomeFragmentDirections.actionHomeFragmentToCheckoutFragment(txtProduct.text.
+                toString())
             btnBuy.setOnClickListener {
                 findNavController().navigate(action)
             }
